@@ -1,4 +1,4 @@
-package me.Autismus.slimefunaddon;
+package me.Autismus.IMO;
 
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -12,6 +12,7 @@ import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
 import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+import io.github.thebusybiscuit.slimefun4.implementation.items.multiblocks.miner.IndustrialMiner
 
 public class IndustrialMinerOverhaul extends JavaPlugin implements SlimefunAddon {
 
