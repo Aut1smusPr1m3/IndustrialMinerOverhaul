@@ -1,4 +1,4 @@
-package me.CHANGEME.slimefunaddon;
+package me.Autismus.slimefunaddon;
 
 import org.bukkit.Material;
 import org.bukkit.NamespacedKey;
@@ -13,7 +13,7 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
-public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
+public class IndustrialMinerOverhaul extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
@@ -28,10 +28,11 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * 1. Creating a new Category
          * This Category will use the following ItemStack
          */
-        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&4Addon Category", "", "&a> Click to open");
+        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&4I.M.O", "", "&a> Click to open");
+        
 
         // Give your Category a unique id.
-        NamespacedKey itemGroupId = new NamespacedKey(this, "addon_category");
+        NamespacedKey itemGroupId = new NamespacedKey(this, "IMO_tab");
         ItemGroup itemGroup = new ItemGroup(itemGroupId, itemGroupItem);
 
         /*
@@ -40,6 +41,7 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * that you give each item a unique id.
          */
         SlimefunItemStack slimefunItem = new SlimefunItemStack("COOL_DIAMOND", Material.DIAMOND, "&4Cool Diamond", "&c+20% Coolness");
+        SlimefunItemStack EXTREME_INDUSTRIAL_MINER = new SlimefunItemStack("EXTREME_INDUSTRIAL_MINER", Material.NETHERITE_BLOCK, "&c&4EXTREME&r Industrial Miner", "", "&fThis Multiblock will mine any Ores", "&fin a &lHUGE&r area underneath it.", "&fPlace a bucket of fuel or lava in", "&fits chest to fuel this machine.", "", "&a+ Silk Touch");
 
         /*
          * 3. Creating a Recipe
